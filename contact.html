@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sid Tatavarthi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<div class="radar" aria-hidden="true"></div>
+
+<header class="navbar">
+  <a class="logo" href="index.html">ST</a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<main class="terminal-wrap">
+
+  <div class="terminal">
+    <div class="terminal-topbar">
+      <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+      <span class="terminal-title">secure_channel.sh</span>
+    </div>
+    <div class="terminal-body">
+      <p class="line" id="bootLine1"></p>
+      <p class="line" id="bootLine2"></p>
+
+      <form class="terminal-form" id="terminalForm" hidden>
+        <label class="term-label">
+          <span>&gt; NAME:</span>
+          <input type="text" id="fieldName" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="term-label">
+          <span>&gt; MESSAGE:</span>
+          <textarea id="fieldMessage" rows="3" spellcheck="false"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" id="transmitBtn">[ TRANSMIT ]</button>
+        <p class="terminal-status" id="terminalStatus"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="channels">
+    <p class="kicker">Other secure channels</p>
+
+    <a class="channel-row" href="#" target="_blank" rel="noopener">
+      <span class="channel-dot"></span>
+      <span class="channel-freq">144.000 MHz</span>
+      <span class="channel-name">GitHub</span>
+    </a>
+    <a class="channel-row" href="#" target="_blank" rel="noopener">
+      <span class="channel-dot"></span>
+      <span class="channel-freq">88.500 MHz</span>
+      <span class="channel-name">LinkedIn</span>
+    </a>
+    <a class="channel-row" href="mailto:hello@example.com">
+      <span class="channel-dot"></span>
+      <span class="channel-freq">100.724 MHz</span>
+      <span class="channel-name">Email</span>
+    </a>
+  </div>
+
+</main>
+
+<script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sid Tatavarthi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+
+<header class="navbar">
+  <a class="logo" href="index.html">ST</a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="hero">
+
+  <section class="hero-left">
+    <canvas id="ropeCanvas"></canvas>
+
+    <div class="drag-hint" id="dragHint">
+      <svg class="hint-arrow" viewBox="0 0 100 90" width="76" height="68">
+        <path d="M92,10 Q58,18 40,48 Q26,68 12,82" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round"/>
+        <path d="M27,78 L12,82 L16,67" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="hint-bubble">
+        <span class="hint-emoji">🤏</span> drag me around!
+      </div>
+    </div>
+
+    <div class="badge" id="badge">
+      <div class="badge-clip"></div>
+      <div class="badge-card">
+        <div class="badge-header">PERSONAL ID</div>
+        <div class="badge-photo">
+          <img src="assets/avatar.svg" alt="Sid Tatavarthi" draggable="false">
+        </div>
+        <div class="badge-name">Sid Tatavarthi</div>
+        <div class="badge-role">Hello! I'm a <span id="rotating-word">Creator</span></div>
+        <div class="badge-footer">
+          <span class="badge-id">NO. 000724</span>
+          <div class="badge-barcode"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-right">
+    <div class="stamp stamp-approved home-stamp">Status: Online</div>
+    <p class="boot-line" id="homeBootLine"></p>
+    <p class="eyebrow">Welcome to my corner of the internet</p>
+    <h1 id="heroTitle">Building things<br>worth noticing.</h1>
+    <p class="tagline">
+      I design and build software, experiment with new ideas, and share
+      what I learn along the way. Drag my badge around — it won't mind.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="work.html">See my work</a>
+      <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+    </div>
+    <div class="socials">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Email">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Sid Tatavarthi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="work.css">
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+
+<header class="navbar">
+  <a class="logo" href="index.html">ST</a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="desktop">
+  <div class="desktop-intro">
+    <p class="kicker">Case Files</p>
+    <h1>My Desktop</h1>
+    <p class="desktop-sub">A few projects, saved right where I left them. Click a file to open it.</p>
+  </div>
+
+  <div class="desktop-icons" id="desktopIcons"></div>
+</main>
+
+<div class="taskbar">
+  <div class="taskbar-start">SID_OS</div>
+  <div class="taskbar-clock" id="taskbarClock"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-window">
+    <div class="modal-titlebar">
+      <span class="dot dot-red" id="modalClose" title="Close"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="modal-filename" id="modalFilename"></span>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="work.js"></script>
+</body>
+</html>

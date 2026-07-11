@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Sid Tatavarthi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+
+<header class="navbar">
+  <a class="logo" href="index.html">ST</a>
+  <nav>
+    <a href="about.html" class="active">About</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="dossier">
+
+  <section class="file-cover">
+    <div class="stamp stamp-classified">Top Secret</div>
+    <p class="boot-line" id="bootLine"></p>
+    <h1 class="glitch" data-text="PERSONNEL FILE">PERSONNEL FILE</h1>
+    <p class="file-sub">SUBJECT: S. TATAVARTHI &nbsp;·&nbsp; CLEARANCE LEVEL: 5 &nbsp;·&nbsp; STATUS: ACTIVE</p>
+    <div class="scroll-cue">scroll to declassify <span>&darr;</span></div>
+  </section>
+
+  <section class="dossier-section reveal" data-label="01 // IDENTITY">
+    <h2>Identity</h2>
+    <div class="redacted-box">
+      <p>
+        Origin: unknown. Confirmed sightings near a keyboard at all hours of the
+        night. Driven by an unreasonable love of building things that make people
+        stop scrolling and go <em>"wait — how does that work?"</em> Known associates:
+        coffee, deadlines, and a suspicious number of open browser tabs.
+      </p>
+      <div class="redact-bar"></div>
+    </div>
+  </section>
+
+  <section class="dossier-section reveal" data-label="02 // CAPABILITIES">
+    <h2>Capabilities</h2>
+    <ul class="meter-list">
+      <li class="meter-row">
+        <span class="meter-label">Building things</span>
+        <span class="meter-track"><span class="meter-fill" style="--pct:92%"></span></span>
+        <span class="meter-pct">92%</span>
+      </li>
+      <li class="meter-row">
+        <span class="meter-label">Debugging at 2am</span>
+        <span class="meter-track"><span class="meter-fill" style="--pct:97%"></span></span>
+        <span class="meter-pct">97%</span>
+      </li>
+      <li class="meter-row">
+        <span class="meter-label">Naming variables</span>
+        <span class="meter-track"><span class="meter-fill" style="--pct:41%"></span></span>
+        <span class="meter-pct">41%</span>
+      </li>
+      <li class="meter-row">
+        <span class="meter-label">Coffee dependency</span>
+        <span class="meter-track"><span class="meter-fill" style="--pct:100%"></span></span>
+        <span class="meter-pct">100%</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="dossier-section timeline-section reveal" data-label="03 // TIMELINE">
+    <h2>Timeline</h2>
+    <div class="timeline" id="timeline">
+      <div class="timeline-line"><div class="timeline-progress" id="timelineProgress"></div></div>
+
+      <div class="timeline-entry">
+        <span class="entry-tag">[ENTRY 001]</span>
+        <h3>First contact with a compiler</h3>
+        <p>An error message was misread as a personal insult. Things escalated from there.</p>
+      </div>
+      <div class="timeline-entry">
+        <span class="entry-tag">[ENTRY 002]</span>
+        <h3>Recruited into the field</h3>
+        <p>Started shipping real projects. Discovered that "it works on my machine" is not a defense.</p>
+      </div>
+      <div class="timeline-entry">
+        <span class="entry-tag">[ENTRY 003]</span>
+        <h3>Went deep undercover</h3>
+        <p>Spent an unreasonable amount of time making a lanyard swing correctly on a website.</p>
+      </div>
+      <div class="timeline-entry">
+        <span class="entry-tag">[ENTRY 004]</span>
+        <h3>Current assignment</h3>
+        <p>Building this very site. Yes, this is a bit meta. No, that wasn't an accident.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="file-end">
+    <div class="stamp stamp-approved">End of File</div>
+    <div class="end-links">
+      <a class="btn btn-primary" href="work.html">View mission logs &rarr;</a>
+      <a class="btn btn-ghost" href="contact.html">Open a channel &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="about.js"></script>
+</body>
+</html>
