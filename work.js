@@ -15,6 +15,11 @@
       tags: ["Python", "OpenCV", "TensorFlow"],
       link: "https://github.com/sidtatavarthi-dev/ObjectDetection",
       linkLabel: "View source on GitHub →",
+      preview: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 30 V15 H30" /><path d="M70 15 H85 V30" />
+        <path d="M85 70 V85 H70" /><path d="M30 85 H15 V70" />
+        <circle cx="50" cy="50" r="14" />
+      </svg>`,
     },
     {
       id: "jarvis",
@@ -29,6 +34,11 @@
       tags: ["Python", "Speech Recognition", "Automation"],
       link: "https://github.com/sidtatavarthi-dev/JarvisAssistant",
       linkLabel: "View source on GitHub →",
+      preview: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="40" y="18" width="20" height="40" rx="10" />
+        <path d="M28 48 a22 22 0 0 0 44 0" />
+        <path d="M50 70 V85" /><path d="M35 85 H65" />
+      </svg>`,
     },
     {
       id: "phonedetector",
@@ -43,6 +53,11 @@
       tags: ["Python", "OpenCV", "MediaPipe"],
       link: "https://github.com/sidtatavarthi-dev/PhoneDetector",
       linkLabel: "View source on GitHub →",
+      preview: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="32" y="12" width="36" height="76" rx="8" />
+        <path d="M46 80 H54" />
+        <path d="M18 50 H30" stroke-dasharray="4 6" /><path d="M70 50 H82" stroke-dasharray="4 6" />
+      </svg>`,
     },
     {
       id: "gesturechess",
@@ -57,6 +72,12 @@
       tags: ["Python", "MediaPipe", "Pygame"],
       link: "https://github.com/sidtatavarthi-dev/gesture-chess",
       linkLabel: "View source on GitHub →",
+      preview: `<svg viewBox="0 0 100 110" fill="currentColor">
+        <circle cx="50" cy="22" r="14" />
+        <rect x="44" y="36" width="12" height="8" rx="2" />
+        <path d="M33 50 C33 62 43 63 43 74 C43 84 30 85 28 96 L72 96 C70 85 57 84 57 74 C57 63 67 62 67 50 C67 44 61 42 50 42 C39 42 33 44 33 50 Z" />
+        <rect x="22" y="96" width="56" height="10" rx="4" />
+      </svg>`,
     },
     {
       id: "lanyard",
@@ -71,6 +92,13 @@
       tags: ["HTML/CSS/JS", "Physics", "Meta"],
       link: "index.html",
       linkLabel: "Return to home →",
+      preview: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M42 8 V20" /><path d="M58 8 V20" />
+        <rect x="30" y="20" width="40" height="10" rx="3" />
+        <rect x="26" y="34" width="48" height="54" rx="6" />
+        <circle cx="50" cy="53" r="8" />
+        <path d="M40 76 H60" />
+      </svg>`,
     },
   ];
 
@@ -118,7 +146,7 @@
         </div>
         <span class="modal-status status-${p.statusClass}">${p.status}</span>
       </div>
-      <div class="modal-preview">preview unavailable</div>
+      <div class="modal-preview" style="--file-color:${p.color}">${p.preview || ""}</div>
       <p class="modal-desc">${p.details}</p>
       <div class="modal-tags">${p.tags.map((t) => `<span class="modal-tag">${t}</span>`).join("")}</div>
       <a class="btn btn-primary" href="${p.link || "#"}" ${p.link === "index.html" ? "" : 'target="_blank" rel="noopener"'}>${p.linkLabel || "Open external link →"}</a>

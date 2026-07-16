@@ -68,9 +68,8 @@
       scrambleReveal(status, "MESSAGE ENCRYPTED. HANDING OFF TO MAIL CLIENT ...", 600);
       const subject = encodeURIComponent("Secure transmission from " + (name || "an anonymous agent"));
       const body = encodeURIComponent(message + (name ? `\n\n— ${name}` : ""));
-      // NOTE: placeholder address — swap for a real inbox before going live.
       setTimeout(() => {
-        window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:sidtatavarthi@gmail.com?subject=${subject}&body=${body}`;
       }, 700);
     }, 550);
   });
